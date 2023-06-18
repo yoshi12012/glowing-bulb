@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on and off</title>
+    <style> 
+    body{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+    nice bulb
+     <div class="center">
+        <img
+        src="https://www.w3schools.com/js/pic_bulboff.gif" id="off-bulb" alt="" onclick="change0">
+        <button onclick="turniton0()"> ON </button>
+        <button onclick="turnitoff0()"> OFF </button>
+        <div id="show-data"></div>
+     </div>
+     <script>
+        function turnitoff0(){
+            var img =
+            document.getElementById('off-bulb');
+            img.src = "https://www.w3schools.com/js/pic_bulboff.gif"
+        }
+        function turniton0(){
+            var img =document.getElementById('off-bulb');
+            img.src = "https://www.w3schools.com/js/pic_bulbon.gif"
+        }
+     </script>
+</body>
+</html>
